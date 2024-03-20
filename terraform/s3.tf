@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3Bucket" {
-  bucket = "website-Hosting-Bucket"
+  bucket = "website-hosting-us-east-1"
 }
 
 resource "aws_s3_bucket_policy" "s3BucketPolicy" {
