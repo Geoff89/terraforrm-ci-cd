@@ -13,7 +13,7 @@ resource "aws_s3_bucket_policy" "s3BucketPolicy" {
         Sid       = "PublicAllow"
         Effect    = "Allow"
         Principal = "*"
-        Action    = ["s3:GetObject", "s3:DeleteObject", "s3:PutObject"]
+        Action    = [  "s3:GetBucketPolicy", "s3:PutBucketPolicy", "s3:GetObject", "s3:DeleteObject", "s3:PutObject"]
         Resource  = "${aws_s3_bucket.s3Bucket.arn}/*"
       },
     ]
